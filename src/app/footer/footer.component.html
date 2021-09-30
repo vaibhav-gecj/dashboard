@@ -1,0 +1,14 @@
+<div class="mainn">
+    <div class="footer">
+        <ng-container *ngFor="let item of footerlist">
+        <div class="item">
+            <div class="pic">
+                <img [src]="item.src" alt="">
+            </div>
+            <div class="text">
+                {{item.name}}
+            </div>
+        </div>
+            </ng-container>
+    </div>
+</div>

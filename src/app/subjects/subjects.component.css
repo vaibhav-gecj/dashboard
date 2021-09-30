@@ -1,0 +1,97 @@
+.subject {
+  background: rgba(154, 227, 252, 1);
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+mat-grid-list {
+  margin-top: 2rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+.grid {
+  position: absolute;
+  /* left: 0%; */
+  right: 0%;
+  /* top: 0%; */
+  /* bottom: 24.05%; */
+
+  /* bio icon */
+
+  /* background: linear-gradient(159.11deg, #17c3ce 3.27%, #05919a 86.19%); */
+  /* Icon Shadow */
+
+  box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 17px;
+  /* height: 120px; */
+  /* width: 120px; */
+  left: 0px;
+  top: 0px;
+  /* margin: 0.5rem 0.5rem 0.5rem 0.5rem; */
+}
+.grid1 {
+  background: linear-gradient(159.11deg, #17c3ce 3.27%, #05919a 86.19%);
+}
+.grid2 {
+  background: linear-gradient(138.81deg, #df4f3c 2.81%, #981808 92.02%);
+}
+.grid3 {
+  background: linear-gradient(156.15deg, #8f45ca 9.41%, #6111a0 84.67%);
+}
+.grid4 {
+  background: linear-gradient(141.55deg, #d0ee5a 11.11%, #1b4700 92.43%);
+}
+.grid5 {
+  background: linear-gradient(143.62deg, #7be7ff 2.79%, #03596c 91.63%);
+}
+.grid6 {
+  background: linear-gradient(156.95deg, #4d5fe2 8.22%, #1225ad 85.07%);
+}
+.grid7 {
+  background: linear-gradient(140.88deg, #efac9e 9.94%, #480c00 100.36%);
+}
+.grid8 {
+  background: linear-gradient(140.88deg, #ddaa40 9.94%, #7e5500 100.36%);
+}
+
+.grid9 {
+  background: linear-gradient(138.42deg, #cfe7f9 7.82%, #001e33 96.29%);
+}
+
+.grid1p {
+  position: absolute;
+  /* left: 19.17%; */
+  /* right: 25.83%; */
+  /* top: 84.81%; */
+  /* bottom: -0.63%; */
+
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #666389;
+}
+.subheader {
+  /* position: absolute; */
+  /* width: 115px;
+  height: 20px; */
+
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 3rem;
+  line-height: 2rem;
+
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  color: #666389;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+}

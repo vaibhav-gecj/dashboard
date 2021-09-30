@@ -1,0 +1,56 @@
+<div class="subject">
+    <div class="subheader">
+        subjects <br>
+        <svg width="82" height="4" viewBox="0 0 82 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="60" height="4" rx="2" fill="#D94A38" />
+            <rect x="63" width="12" height="4" rx="2" fill="#E67667" />
+            <rect x="78" width="4" height="4" rx="2" fill="#ED8D81" />
+        </svg>
+    </div>
+    <div>
+  <mat-grid-list cols="5" gutterSize="2rem">
+            <!-- rowHeight="1:1" -->
+            <!-- rowHeight="15em" -->
+            <ng-container *ngFor="let item of list">
+                <mat-grid-tile class="grid" [class]="item.class">
+                    <img [src]="item.src" alt="">
+                </mat-grid-tile>
+            </ng-container>
+        </mat-grid-list>
+    </div>
+</div>
+
+
+
+
+<!-- 
+<div *ngIf="dataModel" class="container page-content">
+    <mat-grid-list cols="5">
+        <mat-grid-tile *ngFor="let page of dataModel.pages" [colspan]="1" [rowspan]="1">
+            <mat-card>
+                <mat-card-header>
+                    <mat-card-title>{{ page.title }}</mat-card-title>
+                </mat-card-header>
+                <img mat-card-image src="{{ this.imageBase + page.id.trim() + '.jpg' }}" alt="Photo of page" />
+                <mat-card-content>
+                    {{ page.matches }}
+                </mat-card-content>
+                <mat-card-actions>
+                    <button mat-button routerLink="{{ '/page/' + page.id.trim() }}">VIEW</button>
+                </mat-card-actions>
+            </mat-card>
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="5">
+            <button mat-icon-button [disabled]="this.currentIndex == 1" (click)="onNavClick(this.currentIndex - 1)">
+                <mat-icon aria-label="Previous">navigate_before</mat-icon>
+            </button>
+            <ng-container *ngFor="let item of this.getPageArray(); let i = index;">
+                <button mat-mini-fab color="primary" (click)="onNavClick(i + 1)">{{ i + 1 }}</button>
+            </ng-container>
+            <button mat-icon-button [disabled]="this.currentIndex == this.dataModel.totalPageResults"
+                (click)="onNavClick(this.currentIndex + 1)">
+                <mat-icon aria-label="Next">navigate_next</mat-icon>
+            </button>
+        </mat-grid-tile>
+    </mat-grid-list>
+</div> -->

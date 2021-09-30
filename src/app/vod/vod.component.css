@@ -1,0 +1,62 @@
+.ngcont {
+  background: #e9dcdc;
+  box-shadow: 0px 24px 32px rgba(111, 111, 111, 0.08);
+  border-radius: 20px;
+  max-width: 25%;
+}
+.dash-sub-card1 {
+  /* max-width: 25%; */
+  background: linear-gradient(180deg, #ffffff 0%, #d6eef6 100%);
+  box-shadow: 0px 24px 32px rgba(111, 111, 111, 0.08);
+  border-radius: 20px;
+}
+.dash-sub-card2 {
+  /* max-width: 25%; */
+  position: absolute;
+
+  background: #ea5845;
+
+  box-shadow: 0px 24px 32px rgba(111, 111, 111, 0.08);
+  border-radius: 20px;
+}
+.mat1 {
+  background: #e6d2d2;
+  box-shadow: 0px 24px 32px rgba(111, 111, 111, 0.08);
+  border-radius: 20px;
+  z-index: -1;
+}
+.mat2 {
+  margin-top: -30px;
+  background: #ea5845;
+  box-shadow: 0px 24px 32px rgba(111, 111, 111, 0.08);
+  border-radius: 20px;
+}
+.mat-heading {
+  /* position: absolute; */
+  /* width: 242px;
+  height: 20px;
+  left: 836px;
+  top: 462px; */
+
+  /* tab section head */
+
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 20px;
+  /* identical to box height, or 83% */
+
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-top: 1rem;
+  color: #666389;
+}
+.mat-button {
+  background: linear-gradient(138.81deg, #df4f3c 2.81%, #981808 92.02%);
+  border: 1px solid #e2e2e2;
+  box-sizing: border-box;
+  border-radius: 50px;
+  color: white;
+  margin-bottom: 20px;
+}
