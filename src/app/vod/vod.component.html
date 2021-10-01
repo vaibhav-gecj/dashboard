@@ -12,43 +12,65 @@
             </div>
         </mat-card-title>
     </mat-card-header>
+    <iframe width="80%" height="315" src="https://www.youtube.com/embed/y881t8ilMyc" frameborder="0"
+        allowfullscreen></iframe>
+    <mat-card-header>
+        <mat-card-title>
+            <div class="mat-heading">Challenge Of The Day
+                <br>
+                <svg width="82" height="4" viewBox="0 0 82 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="60" height="4" rx="2" fill="#D94A38" />
+                    <rect x="63" width="12" height="4" rx="2" fill="#E67667" />
+                    <rect x="78" width="4" height="4" rx="2" fill="#ED8D81" />
+                </svg>
+            </div>
+        </mat-card-title>
+    </mat-card-header>
     <mat-card class="dash-sub-card1">
         <h4>Select Subject</h4>
-        <mat-form-field appearance="fill">
+        <mat-form-field appearance="outline">
             <mat-label>Select an option</mat-label>
             <mat-select>
-                <mat-option value="Maths" selected>Maths</mat-option>
-                <mat-option value="Science">Science</mat-option>
-                <mat-option value="English">English</mat-option>
-                <mat-option value="English">English</mat-option>
+                <mat-option *ngFor="let food of Foods" [value]="food.value">
+                    {{food.viewValue}}
+                </mat-option>
             </mat-select>
         </mat-form-field>
         <br>
-        <button mat-button>View Challenge
+        <button mat-button (click)="div1Function()" >View Challenge
             <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0.725258 13.1428L6.88889 7.14282L0.725258 1.14282" stroke="white" stroke-linecap="round"
                     stroke-linejoin="round" />
             </svg>
         </button>
     </mat-card>
-    <mat-card class="dash-sub-card2">
-        <mat-card-content>
-            <h5>Animal Form and Functions</h5>
-            <h6>Copy
-                Apply online for a new Sobikon Bank Premier Checking...</h6>
-            <span matBadge="A" matBadgeOverlap="false"></span> <br>
-            <p>Online</p>
-            <!-- <br> -->
-            <span matBadge="B" matBadgeOverlap="false"></span> <br>
-            <p>Online</p>
-            <span matBadge="C" matBadgeOverlap="false"></span> <br>
-            <p>Online and Offline</p>
-            <span matBadge="D" matBadgeOverlap="false"></span> <br>
-            <p>Online and Offline</p>
-            <div>
-                <p>
-
-                </p>
+    <mat-card class="dash-sub-card2" *ngIf="div1">
+        <mat-card-content style="margin-top: 50px;">
+            <h4 class="matcard2">Animal Form and Functions</h4>
+            <h5>Apply online for a new Sobikon Bank Premier Checking...</h5>
+            <div class="question"> 
+            <div class="badge">
+                <p class="btext">A</p>
+            </div>
+            <p class="qtext">Online</p>
+            </div>
+            <div class="question"> 
+            <div class="badge">
+                <p class="btext">B</p>
+            </div>
+            <p class="qtext">Online</p>
+            </div>
+            <div class="question"> 
+            <div class="badge">
+                <p class="btext">C</p>
+            </div>
+            <p class="qtext">Online & offline</p>
+            </div>
+            <div class="question"> 
+            <div class="badge">
+                <p class="btext">D</p>
+            </div>
+            <p class="qtext">Online & offline</p>
             </div>
         </mat-card-content>
         <!-- <section class="progress-section">
